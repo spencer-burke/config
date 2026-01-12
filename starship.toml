@@ -1,0 +1,32 @@
+add_newline = true
+
+format = '''
+[╔](bold white)$username$hostname$directory$git_branch$python
+[╚$character](bold white) '''
+
+[character]
+format = '[❯](bold green)'
+
+[username]
+format = '[[\[](bold white)[](bold cyan) $user](bold green)'
+show_always = true
+
+[hostname]
+format = '[@](bold white)[$hostname](bold green)[\]](bold white)'
+ssh_only = false
+
+[directory]
+format = '[-\[ ](bold white)[$path](bold cyan)[\]](bold white)'
+disabled = false
+
+[git_branch]
+format = '(-\[[$symbol](bold red) $branch(bold white)\])'
+disabled = false
+symbol = ""
+
+[python]
+format = '(-\[[$symbol](bold yellow) $virtualenv(bold white)\])'
+symbol = ""
+
+[package]
+disabled = true
